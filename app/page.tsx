@@ -1,5 +1,9 @@
-export default function Home() {
+const HomePage= () => {
   return (
-    <h1>Next Expense</h1>  
-  );
+    <main>
+      <h1>Expense Tracker</h1>
+    </main>
+  )
 }
+
+export default HomePage
