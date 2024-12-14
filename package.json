@@ -1,5 +1,5 @@
 {
-  "name": "next-expense",
+  "name": "nimiratech-ai",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,17 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^5.2.4",
-    "@prisma/client": "^5.17.0",
-    "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "next": "14.2.16"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "prisma": "^5.17.0",
-    "typescript": "^5"
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }
