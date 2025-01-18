@@ -6,7 +6,7 @@ const HomePage = () => {
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-6xl text-[#ffd700]">NimiraTech AI</h1>
-          <p className="py-6 text-lg text-[#fffaf0] lh-lg">Introducing your new AI language partner. Powered by OpenAI, it enhances conversations, content creation and daily tasks.</p>
+          <p className="py-6 text-lg text-[#fffaf0] lh-lg">Project on Hold</p>
           <Link href='/chat' className='btn btn-dark btn-dark:hover'>Start Now</Link>
         </div>
       </div>
