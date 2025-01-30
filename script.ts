@@ -1,1 +1,1 @@
-console.log('Testing')
+let fruit: string = 'apple'
