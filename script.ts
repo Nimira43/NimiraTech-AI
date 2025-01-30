@@ -1,1 +1,1 @@
-let fruit: string = 'apple'
+const inputField = document.getElementById('amount')

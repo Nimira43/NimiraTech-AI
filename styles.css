@@ -1,64 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; 
+  box-sizing: border-box;
+}
+
+body {
+  color: #ff4500;
+  background-color: #111;
+  margin: 0; 
 }
 
 .wrapper {
-  height: 100vh;
-  font-family: 'Doto', serif;
-  font-weight: 500;
-  font-size: 20px;
-  background-color: #000;
-  color: #08c508;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 2rem;
+}
+
+.box {
+  margin: 0.7rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.5);
 }
 
 .init {
-  height: 400px;
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
-.title {
-  font-family: 'Poppins', sans-serif;
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-bottom: 2rem;
   font-weight: 100;
-  text-transform: uppercase
+  font-size: larger;
 }
 
-input {
-  margin: 20px 0;
-  height: 30px;
-  width: 60%;
-  display: block;
+input[type="text"] {
   background-color: transparent;
-  border: 1px dotted #08c508;
+  border: 1px solid #ff4500;
+  padding: 15px;
+  outline: none;
 }
 
-button {
-  background-color: #08c508;
+button#generate {
+  padding: 15px;
+  background-color: #ff4500;
   border: none;
   outline: none;
-  font-weight: 900;
-  text-transform: uppercase; 
-  transition: background-color 0.5s ease-in-out;
-  cursor: pointer;
+  color: #fffcfa;
+  transition: all 0.5s ease-in-out;  
 }
 
-button:hover {
-  background-color: #056005;
+button#generate:hover {
+  background: #972901;
+  color: #fffcfa;
+  transform: scale(1.2);
 }
 
-button, input {
-  border-radius: 3px;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: inherit;
+output {
+  display: block;
+  margin-top: 1rem;
+}
+
+input[type="text"].lost {
+  background-color: #008080;
+}
+
+button#generate:disabled {
+  background-color: #008080;
+  color: #fffcfa;
+  cursor: not-allowed; 
+}
+
+button#generate:disabled:hover {
+  transform: scale(1);
+  background-color: #008080;
+  cursor: not-allowed; 
 }
